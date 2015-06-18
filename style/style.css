@@ -1,12 +1,13 @@
+@import "http://fonts.googleapis.com/css?family=Raleway:400,300,100,700|Playfair+Display";
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
     color: black;
-    font-family: sans-serif;
 }
 
 h1 {
@@ -31,14 +32,40 @@ h3 {
 
 #header {
     width: 100%;
-    background-color:  #ff6f00;
+    background-color: #ff6f00;
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 50px;
+    position: relative;
 }
 
-#header p {
-    padding: 5px;
+#header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+.headerleft {
+    padding: 10px;
     font-size: 120%;
+    width: 33%;
+    float: left;
+    height: 100%;
+}
+
+.headerright {
+    padding: 10px;
+    text-align: right;
+    font-size: 120%;
+    height: 100%;
+    width: 33%;
+    float: right;
 }
 
 .tile {

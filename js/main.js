@@ -80,7 +80,6 @@
     function checkMatch(card) {
         //compare!
         if (previousCard.sourcecode === card.sourcecode) {
-            console.log("match!");
             matchesFound = matchesFound + 1;
             document.getElementById("matchesFound").textContent = matchesFound;
             if (matchesFound == allMatches) {
@@ -92,15 +91,12 @@
             card.clickable = false;
             previousCard = null;
         } else {
-            console.log("no match!");
             frozenGamefield = true;
-            console.log("gamefield frozen");
             setTimeout(function() {
                 frozenGamefield = false;
                 card.flipFaceDown();
                 previousCard.flipFaceDown();
                 previousCard = null;
-                console.log("gamefield unfrozen");
             }, 2000);
         }
     }
@@ -153,27 +149,19 @@
 
     playGame(flagsOnGamefield);
 
-    var cardsToConsole = document.getElementById('cardsToConsole');
-    cardsToConsole.onclick = function() {
-        for (i = 0; i < tiles.length; i++) {
-            console.log(flagsOnGamefield[i].DOMelement, flagsOnGamefield[i].sourcecode);
-        }
-    };
 
     function activateOverlay() {
-        console.log("overlay active");
         var overlayAll = document.getElementById("overlayAll");
         overlayAll.style.display = "initial";
     }
 
     function refreshPage() {
+        console.log("dd")
         window.location.reload();
     }
 
 
-    document.getElementById('activateOverlay').onclick = function() {
-        activateOverlay();
-    };
+
 
     document.getElementById("refreshButton").onclick = function() {
         refreshPage();
