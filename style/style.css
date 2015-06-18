@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: black;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 120%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+#gamearea {
+    padding: 30px;
+    margin: 0 auto;
+    height: 750px;
+    max-width: 670px;
+    position: relative;
+    margin-top: 25px;
+}
+
+#footer {
+    background-color: #009688;
+    color: white;
+    width: 580px;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#footer p {
+    padding: 5px;
+    font-size: 120%;
+}
+
+.tile {
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.tile:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.flag {
+    width: 180px;
+    height: 120px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.Japan {
+    background-color: white;
+}
+
+.Poland {
+    background-color: white;
+}
+
+.Poland .red {
+    position: absolute;
+    top: 50%;
+    background-color: #D4213D;
+    width: inherit;
+    height: 50%;
+}
+
+.Ukraine {
+    background-color: #005bbb;
+}
+
+.Ukraine .yellow {
+    position: absolute;
+    top: 50%;
+    background-color: #ffd500;
+    width: inherit;
+    height: 50%;
+}
+
+.Bangladesh {
+    background-color: #01796F;
+}
+
+.Bangladesh .circle {
+    background-color: #E11837;
+}
+
+.Czech {
+    background-color: white;
+}
+
+.Czech .red {
+    position: absolute;
+    top: 50%;
+    background-color: #EB0009;
+    width: inherit;
+    height: 50%;
+}
+
+.Czech .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 60px 90px;
+    border-color: transparent transparent transparent #0638BE;
+}
+
+.circle {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 50%;
+    width: 40%;
+    height: 60%;
+}
+
+.Japan .circle {
+    background-color: #C60C30;
+}
+
+.backside {
+    background-color: #00bcd4;
+}
+
+.Denmark {
+    background-color: #C60C30;
+}
+
+.Denmark .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: white;
+}
+
+.Denmark .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: white;
+}
+
+.Sweden {
+    background-color: #004b87;
+}
+
+.Sweden .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: #ffcd00;
+}
+
+.Sweden .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: #ffcd00;
+}
+
+.Finland {
+    background-color: white;
+}
+
+.Finland .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: #002f6c;
+}
+
+.Finland .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: #002f6c;
+}
+
+.fade {
+    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.fade:hover {
+    -webkit-transform: none;
+    transform: none;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {}
+
+#overlayAll {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#overlayBox {
+    z-index: 10;
+    width: 500px;
+    height: 500px;
+    background-color: #eceef0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.33);
+    padding: 2%;
+    text-align: center;
+}
+
+#overlayBox p {
+    color: black;
+    font-size: 200%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+#overlayBox figure {}
+
+.btn {
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #b66183;
+    padding: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #72193d;
+    text-decoration: none;
+}
