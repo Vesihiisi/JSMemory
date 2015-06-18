@@ -20,7 +20,7 @@
     function pickRandom(someArray, amount) {
         var indices = [];
         var result = [];
-        for(i=0; i<someArray.length; i++) {
+        for (i = 0; i < someArray.length; i++) {
             indices.push(i)
         }
         indices = shuffleArray(indices).slice(0, amount)
@@ -166,9 +166,17 @@
         overlayAll.style.display = "initial";
     }
 
+    function refreshPage() {
+        window.location.reload();
+    }
+
 
     document.getElementById('activateOverlay').onclick = function() {
         activateOverlay();
+    };
+
+    document.getElementById("refreshButton").onclick = function() {
+        refreshPage();
     };
 
 })();
