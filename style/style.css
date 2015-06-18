@@ -29,15 +29,14 @@ h3 {
     margin-top: 25px;
 }
 
-#footer {
-    background-color: #009688;
+#header {
+    width: 100%;
+    background-color:  #ff6f00;
     color: white;
-    width: 580px;
-    float: left;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-#footer p {
+#header p {
     padding: 5px;
     font-size: 120%;
 }
