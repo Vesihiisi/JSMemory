@@ -1,0 +1,135 @@
+.Bangladesh {
+    background-color: #01796F;
+}
+
+.Bangladesh .circle {
+    background-color: #E11837;
+}
+
+.Czech {
+    background-color: white;
+}
+
+.Czech .red {
+    position: absolute;
+    top: 50%;
+    background-color: #EB0009;
+    width: inherit;
+    height: 50%;
+}
+
+.Czech .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 60px 90px;
+    border-color: transparent transparent transparent #0638BE;
+}
+
+.Denmark {
+    background-color: #C60C30;
+}
+
+.Denmark .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: white;
+}
+
+.Denmark .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: white;
+}
+
+.Finland {
+    background-color: white;
+}
+
+.Finland .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: #002f6c;
+}
+
+.Finland .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: #002f6c;
+}
+
+.Japan {
+    background-color: white;
+}
+
+.Japan .circle {
+    background-color: #C60C30;
+}
+
+.Poland {
+    background-color: white;
+}
+
+.Poland .red {
+    position: absolute;
+    top: 50%;
+    background-color: #D4213D;
+    width: inherit;
+    height: 50%;
+}
+
+.Sweden {
+    background-color: #004b87;
+}
+
+.Sweden .hor {
+    position: absolute;
+    top: 40.41%;
+    left: 0;
+    width: 100%;
+    height: 18.75%;
+    background-color: #ffcd00;
+}
+
+.Sweden .ver {
+    position: absolute;
+    top: 0;
+    left: 31.25%;
+    width: 12.5%;
+    height: 100%;
+    background-color: #ffcd00;
+}
+
+.Ukraine {
+    background-color: #005bbb;
+}
+
+.Ukraine .yellow {
+    position: absolute;
+    top: 50%;
+    background-color: #ffd500;
+    width: inherit;
+    height: 50%;
+}
+
+.circle {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border-radius: 50%;
+    width: 40%;
+    height: 60%;
+}
