@@ -81,7 +81,11 @@ h3 {
 }
 
 .tile:hover {
-    -webkit-transform: scale(1.08);
+
+}
+
+.transitions:hover {
+        -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
 
@@ -103,16 +107,8 @@ h3 {
 }
 
 .fade:hover {
-    -webkit-transform: none;
-    transform: none;
-}
 
-#footer a {
-    color: white;
-    text-decoration: none;
 }
-
-#footer a:hover {}
 
 #overlayAll {
     display: none;

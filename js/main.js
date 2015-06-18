@@ -21,11 +21,11 @@
         var indices = [];
         var result = [];
         for (i = 0; i < someArray.length; i++) {
-            indices.push(i)
+            indices.push(i);
         }
-        indices = shuffleArray(indices).slice(0, amount)
+        indices = shuffleArray(indices).slice(0, amount);
         for (var i = 0; i < indices.length; i++) {
-            result.push(someArray[indices[i]])
+            result.push(someArray[indices[i]]);
         }
         return result;
     }
@@ -41,15 +41,15 @@
     var flagCzech = '<div class="flag Czech"><div class="red"></div><div class="triangle"></div></div>';
     var flagBangladesh = '<div class="flag Bangladesh"><div class="circle"></div>';
     var flagPoland = '<div class="flag Poland"><div class="red"></div></div>';
-    var flagUkraine = '<div class="flag Ukraine"><div class="yellow"></div></div>'
+    var flagUkraine = '<div class="flag Ukraine"><div class="yellow"></div></div>';
     var possibleFlags = [flagFinland, flagSweden, flagDenmark, flagJapan, flagCzech, flagBangladesh, flagPoland, flagUkraine];
 
 
     //Array of possible flags x2, shuffled randomly
     //each element in array is actually html code
     //They can now be mapped to tiles
-    flagsToUse = pickRandom(possibleFlags, 6)
-    flagsToUseDouble = flagsToUse.concat(flagsToUse)
+    flagsToUse = pickRandom(possibleFlags, 6);
+    flagsToUseDouble = flagsToUse.concat(flagsToUse);
     flagsToUseDouble = shuffleArray(flagsToUseDouble);
 
     var flagsOnGamefield = [];
@@ -61,6 +61,10 @@
     var minPossible = 0;
 
     var tiles = document.getElementsByClassName("tile");
+
+    for (i=0; i<tiles.length; i++) {
+        tiles[i].classList.add("transitions");
+    }
 
     function FlagObject(sourcecode) {
         //I'm an object constructor.
@@ -86,7 +90,9 @@
                 activateOverlay();
             }
             card.DOMelement.classList.add("fade");
+            card.DOMelement.classList.remove("transitions");
             previousCard.DOMelement.classList.add("fade");
+            previousCard.DOMelement.classList.remove("transitions");
             previousCard.clickable = false;
             card.clickable = false;
             previousCard = null;
@@ -156,7 +162,6 @@
     }
 
     function refreshPage() {
-        console.log("dd")
         window.location.reload();
     }
 
